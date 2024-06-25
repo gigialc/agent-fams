@@ -7,6 +7,17 @@ import random
 
 st.set_page_config(page_title="Fertility Friend", page_icon="🌸", layout="wide")
 
+#add text
+st.markdown("""
+    <style>
+    .big-font {
+        font-size:20px !important;
+        font-weight: bold;  
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
 # Load the CSV data
 @st.cache_data
 def load_data():
@@ -17,6 +28,12 @@ cycle_data = load_data()
 
 
 st.title("🌸 Your Fertility Friend")
+
+st.write(
+    """
+    The following tool was created using the[What's the cervical mucus method of FAMs? Planned Parenthood Article](https://www.plannedparenthood.org/learn/birth-control/fertility-awareness/whats-cervical-mucus-method-fams).
+    """
+)
 
 st.markdown("""
     <style>
