@@ -1,0 +1,31 @@
+Day,Phase,Cervical Mucus Consistency,Cervical Mucus Color,Cervical Mucus Amount,Fertility Level,Additional Notes
+1,Menstruation,Not observable,Red,Heavy,Unsafe,Period blood masks mucus
+2,Menstruation,Not observable,Red,Heavy,Unsafe,Period blood masks mucus
+3,Menstruation,Not observable,Red to brown,Moderate,Unsafe,Period blood masks mucus
+4,Menstruation,Not observable,Brown,Light,Unsafe,Period blood masks mucus
+5,Early Follicular,Dry,None,None,Potentially safe,First dry day after period
+6,Early Follicular,Dry,None,None,Potentially safe,Dry day
+7,Early Follicular,Dry,None,None,Potentially safe,Last dry day
+8,Late Follicular,Sticky,White or Yellow,Scant,Less safe,First sign of fertility
+9,Late Follicular,Sticky,White or Yellow,Scant to light,Less safe,Mucus becoming noticeable
+10,Late Follicular,Tacky,White or Cloudy,Light,Less safe,Mucus changing consistency
+11,Late Follicular,Creamy,White or Cloudy,Light to moderate,Unsafe,Approaching fertile window
+12,Ovulatory,Stretchy,Clear,Moderate,Unsafe,Fertile mucus begins
+13,Ovulatory,Very stretchy,Clear,Abundant,Unsafe,Peak fertility day
+14,Ovulatory,Very stretchy,Clear,Abundant,Unsafe,Ovulation likely (peak day)
+15,Ovulatory,Stretchy,Clear to cloudy,Moderate to abundant,Unsafe,Last day of peak fertility
+16,Early Luteal,Tacky,Cloudy,Moderate,Less safe,Transitioning out of fertile window
+17,Early Luteal,Sticky,White or Yellow,Light to moderate,Less safe,Fertility decreasing
+18,Early Luteal,Sticky,White or Yellow,Scant,Safe,Post-ovulation confirmed
+19,Mid Luteal,Sticky to dry,White or Yellow,Scant,Safe,Mucus decreasing
+20,Mid Luteal,Dry,None,None,Safe,No visible mucus
+21,Mid Luteal,Dry,None,None,Safe,No visible mucus
+22,Mid Luteal,Dry,None,None,Safe,No visible mucus
+23,Late Luteal,Dry,None,None,Safe,No visible mucus
+24,Late Luteal,Dry,None,None,Safe,No visible mucus
+25,Late Luteal,Dry,None,None,Safe,No visible mucus
+26,Pre-menstrual,Slightly sticky,White or Yellow,Scant,Safe,Possible secondary estrogen surge
+27,Pre-menstrual,Slightly sticky,White or Yellow,Scant,Safe,Approaching menstruation
+28,Pre-menstrual,Dry or slightly sticky,White or Yellow,Scant,Safe,Nearing end of cycle
+29,Pre-menstrual,Dry,None,None,Safe,Last day before expected period
+30,Menstruation,Not observable,Red,Heavy,Unsafe,New cycle begins
