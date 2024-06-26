@@ -46,18 +46,18 @@ st.markdown("""
 
 st.markdown('<p class="big-font">Discover your cycle with a splash of fun! 🎉</p>', unsafe_allow_html=True)
 
-# Last period start date input
-last_period = st.date_input("When did your last period start?", datetime.date.today() - datetime.timedelta(days=28))
+# # Last period start date input
+# last_period = st.date_input("When did your last period start?", datetime.date.today() - datetime.timedelta(days=28))
 
 
-# Date input
-today = st.date_input("What's today's date?", datetime.date.today())
+# # Date input
+# today = st.date_input("What's today's date?", datetime.date.today())
 
-# Calculate cycle day
-cycle_day = (today - last_period).days + 1
+# # Calculate cycle day
+# cycle_day = (today - last_period).days + 1
 
-# Display cycle day
-st.subheader(f"🗓️ You're on Day {cycle_day} of your cycle!")
+# # Display cycle day
+# st.subheader(f"🗓️ You're on Day {cycle_day} of your cycle!")
 
 # Mucus input
 mucus_options = cycle_data['Cervical Mucus Consistency'].unique()
