@@ -1,13 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import datetime
 import random
-
 
 st.set_page_config(page_title="Fertility Friend", page_icon="🌸", layout="wide")
 
-#add text
+# Add text
 st.markdown("""
     <style>
     .big-font {
@@ -17,7 +15,6 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-
 # Load the CSV data
 @st.cache_data
 def load_data():
@@ -26,38 +23,15 @@ def load_data():
 
 cycle_data = load_data()
 
-
 st.title("🌸 Your Fertility Friend")
 
 st.write(
     """
-    The following tool was created using the[What's the cervical mucus method of FAMs? Planned Parenthood Article](https://www.plannedparenthood.org/learn/birth-control/fertility-awareness/whats-cervical-mucus-method-fams).
+    The following tool was created using the [What's the cervical mucus method of FAMs? Planned Parenthood Article](https://www.plannedparenthood.org/learn/birth-control/fertility-awareness/whats-cervical-mucus-method-fams).
     """
 )
 
-st.markdown("""
-    <style>
-    .big-font {
-        font-size:20px !important;
-        font-weight: bold;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
 st.markdown('<p class="big-font">Discover your cycle with a splash of fun! 🎉</p>', unsafe_allow_html=True)
-
-# # Last period start date input
-# last_period = st.date_input("When did your last period start?", datetime.date.today() - datetime.timedelta(days=28))
-
-
-# # Date input
-# today = st.date_input("What's today's date?", datetime.date.today())
-
-# # Calculate cycle day
-# cycle_day = (today - last_period).days + 1
-
-# # Display cycle day
-# st.subheader(f"🗓️ You're on Day {cycle_day} of your cycle!")
 
 # Mucus input
 mucus_options = cycle_data['Cervical Mucus Consistency'].unique()
@@ -98,11 +72,10 @@ if st.button("Reveal My Fertility Forecast! 🔮"):
     st.write(f"Today's mucus suggests: {today_match['Additional Notes']}")
 
 # Visualize the cycle
-st.subheader("Your Cycle Visualized 📊")
+st.subheader("General Cycle Visualization 📊")
 
 fig = px.line(cycle_data, x='Day', y='Fertility Level', color='Phase', 
               hover_data=['Cervical Mucus Consistency', 'Cervical Mucus Color', 'Additional Notes'])
-fig.add_vline(x=cycle_day, line_dash="dash", line_color="red", annotation_text="Today")
 st.plotly_chart(fig)
 
 st.markdown("---")
